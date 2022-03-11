@@ -1,0 +1,39 @@
+{
+    "menus": [
+        {
+            "id": 1,
+            "text": "Home",
+            "class": "drop",
+            "link": "/",
+            "dropdown": {},
+            "mega_dropdown": {}
+        },
+        {
+            "id": 2,
+            "text": "Portfolio",
+            "class": "drop",
+            "link": "/portfolio",
+            "dropdown":[
+                {
+                    "id":2.1,
+                    "text":"portfolio details",
+                    "class":"mega__title",
+                    "link":"/portfolio",
+                    "dropdown":{},
+                    "mega_dropdown":{}
+                },
+                {
+                    "id":2.2,
+                    "text":"portfolio list",
+                    "class":"mega__title",
+                    "link":"/portfolio",
+                    "dropdown":{},
+                    "mega_dropdown":{}
+                }
+            ]
+            
+        }
+
+
+    ]
+}
