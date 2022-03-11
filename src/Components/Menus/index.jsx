@@ -3,7 +3,7 @@ import menuData from '../../temp/menus.json'
 
 const Menus = () => {
     console.log(menuData.menus);
-    console.log(menuData.megaDropdownMenu);
+    
   return (
     <div className="col-md-8 col-lg-8 col-sm-6 col-xs-6">
       <nav className="mainmenu__nav hidden-xs hidden-sm">
@@ -12,18 +12,32 @@ const Menus = () => {
               {menuData.menus.length > 0 && menuData.menus.map(menu => (
                   <li key={menu.id} className={menu.class}>
                     <a href={menu.link}>{menu.text} </a>
+                        <ul className='dropdown mega_dropdown'>
+                            {
+                                menuData.dropdown.length > 0 && menuData.dropdown.map(menu =>(
+                                    <li key={menu.id}>
+                                        <a href={menu.link}></a>
+                                        {console.log(menu.id)}
+                                    </li>
+                                    
+                                ))
+                            }
+                        </ul>
 
-                         {console.log(menu.dropdown)}         
+                        
+                               
                   </li>
                  
               ))}
              
 
 
-        
+
+
+        {/* }
               <li className="drop"><a href="shop.html">Shop</a>
                   <ul className="dropdown mega_dropdown">
-                      {/* <!-- Start Single Mega MEnu --> */}
+                     
                       <li><a className="mega__title" href="shop.html">shop layout</a>
                           <ul className="mega__item">
                               <li><a href="shop.html">default shop</a></li>
@@ -31,8 +45,7 @@ const Menus = () => {
                       </li>
 
 
-                      {/* <!-- End Single Mega MEnu --> */}
-                      {/* <!-- Start Single Mega MEnu --> */}
+                     
 
                       <li><a className="mega__title" href="shop.html">product details layout</a>
                           <ul className="mega__item">
@@ -40,8 +53,7 @@ const Menus = () => {
                           </ul>
                       </li>
                       
-                      {/* <!-- End Single Mega MEnu --> */}
-                      {/* <!-- Start Single Mega MEnu --> */}
+                    
 
 
                       <li>
@@ -55,7 +67,7 @@ const Menus = () => {
                               </li>
                           </ul>
                       </li>
-                      {/* <!-- End Single Mega MEnu --> */}
+                      {/* <!-- End Single Mega MEnu --> 
                   </ul>
               </li>
              
@@ -70,11 +82,16 @@ const Menus = () => {
               <li className="drop"><a href="#">pages</a>
                   <ul className="dropdown">
                       <li><a href="about.html">about</a></li>
-                      <li><a href="#">testimonials <span><i className="zmdi zmdi-chevron-right"></i></span></a>
+
+                      <li>
+                          <a href="#">testimonials 
+                          <span><i className="zmdi zmdi-chevron-right"></i></span>
+                          </a>
                           <ul className="lavel-dropdown">
                               <li><a href="customer-review.html">customer review</a></li>
                           </ul>
                       </li>
+
                       <li><a href="shop.html">shop</a></li>
                       <li><a href="shop-sidebar.html">shop sidebar</a></li>
                       <li><a href="product-details.html">product details</a></li>
@@ -118,11 +135,11 @@ const Menus = () => {
                           <li><a href="login-register.html">login & register</a></li>
                       </ul>
                   </li>
-                  <li><a href="contact.html">contact</a></li>
+                  <li><a href="contact.html">contact</a></li>*/}
               </ul>
           </nav>
       </div>                          
-  </div>
+ 
   )
 }
 
