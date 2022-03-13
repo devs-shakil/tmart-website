@@ -15,7 +15,7 @@
             "link": "/portfolio",
             "dropdown":[
                 {
-                    "id":2.1,
+                    "id":3,
                     "text":"portfolio details",
                     "class":"mega__title",
                     "link":"/portfolio",
@@ -23,7 +23,7 @@
                     "mega_dropdown":{}
                 },
                 {
-                    "id":2.2,
+                    "id":4,
                     "text":"portfolio list",
                     "class":"mega__title",
                     "link":"/portfolio",
@@ -35,56 +35,56 @@
             
         },
         {
-            "id": 3,
+            "id": 5,
             "text": "Shop",
             "class": "drop",
             "link": "./shop",
             "dropdown": [
                 {
-                    "id": 3.1,
+                    "id": 6,
                     "text": "shop Layout",
                     "class": "mega_title",
                     "link": "/shop",
-                    "dropdown": [
+                    "dropdown":[],
+                    "mega_dropdown": [
                         {
-                            "id": 3.2,
+                            "id": 7,
                             "text": "Deafult shop",
                             "class": "mega_item",
                             "link": "/shop",
                             "dropdown": {},
                             "mega_dropdown": {}
                         }
-                    ],
-                    "mega_dropdown": {}
+                    ]
                 },
                 {
-                    "id": 3.3,
+                    "id": 8,
                     "text": "Product details layout",
                     "class": "mega_item",
                     "link": "/shop",
-                    "dropdown": [
+                    "dropdown": {},
+                    "mega_dropdown": [
                         {
-                            "id": 3.4,
+                            "id": 9,
                             "text": "tab style one",
                             "class": "drop",
                             "link": "/shop",
                             "dropdown": {},
                             "mega_dropdown": {}
                         }
-                    ],
-                    "mega_dropdown": {}
+                    ]
                 }
             ],
             "mega_dropdown": {}
         },
         {
-            "id": 4,
+            "id": 10,
             "text": "Pages",
             "class": "drop",
             "link": "./pages",
             "dropdown":[
                 {
-                    "id": 4.1,
+                    "id": 11,
                     "text": "about",
                     "class": "",
                     "link": "./about",
@@ -92,24 +92,24 @@
                     "mega_dropdown": {}
                 },
                 {
-                    "id": 4.2,
+                    "id": 12,
                     "text": "testimonial",
                     "class": "",
                     "link": "#",
-                    "dropdown": [
+                    "dropdown": {},
+                    "mega_dropdown": [
                         {
-                            "id": 4.3,
+                            "id": 13,
                             "text": "Customar review",
                             "class": "",
                             "link": "#",
                             "dropdown": {},
                             "mega_dropdown": {}
                         }
-                    ],
-                    "mega_dropdown": {}
+                    ]
                 },
                 {
-                    "id": 4.4,
+                    "id": 14,
                     "text": "Shop",
                     "class": "",
                     "link": "#",
@@ -117,7 +117,7 @@
                     "mega_dropdown": {}
                 },
                 {
-                    "id": 4.5,
+                    "id": 15,
                     "text": "Shop slidbar",
                     "class": "",
                     "link": "/",
@@ -125,7 +125,7 @@
                     "mega_dropdown": {}
                 },
                 {
-                    "id": 4.6,
+                    "id": 16,
                     "text": "Product details",
                     "class": "",
                     "link": "/product-details.html",
@@ -133,7 +133,7 @@
                     "mega_dropdown": {}
                 },
                 {
-                    "id": 4.7,
+                    "id": 17,
                     "text": "Cart",
                     "class": "",
                     "link": "cart.html",
@@ -141,7 +141,7 @@
                     "mega_dropdown": {} 
                 },
                 {
-                    "id": 4.8,
+                    "id": 18,
                     "text": "wishlist",
                     "class": "",
                     "link": "/wishlist.html",
@@ -149,7 +149,7 @@
                     "mega_dropdown": {}
                 },
                 {
-                    "id": 4.9,
+                    "id": 19,
                     "text": "Checkout",
                     "class": "",
                     "link": "/checkout.html",
@@ -157,7 +157,7 @@
                     "mega_dropdown": {}
                 },
                 {
-                    "id": 4.10,
+                    "id": 20,
                     "text": "Team",
                     "class": "",
                     "link": "/team.html",
@@ -165,10 +165,10 @@
                     "mega_dropdown": {}
                 },
                 {
-                    "id": 4.11,
+                    "id":21,
                     "text": "Login and register",
                     "class": "",
-                    "link": "/login-register.html",
+                    "link": "/login-register",
                     "dropdown": {},
                     "mega_dropdown": {}
                 }
@@ -176,10 +176,10 @@
             "mega_dropdown": {}
         },
         {
-            "id": 5,
+            "id": 22,
             "text": "Contact",
             "class": "drop",
-            "link": "/contact.html",
+            "link": "/contact",
             "dropdown": {},
             "mega_dropdown": {}
         }
