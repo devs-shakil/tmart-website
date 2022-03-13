@@ -3,6 +3,9 @@ import { Header } from '../../Components/partial/Header';
 import ContactArea from './ContactArea';
 import BradCaump from './BradCaump';
 import Ofset from '../../Components/ofset';
+import Information from '../footer/Information';
+import Catagories from '../footer/catagories';
+import Footer from '../footer';
 
 
 const Contact = () => {
@@ -24,9 +27,6 @@ const Contact = () => {
             <ContactArea/>
             
          
-
-
-
      </div>
    
 

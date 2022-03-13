@@ -1,5 +1,6 @@
 import React from 'react'
 import regImg from '../../assets/images/bg/5.jpg'
+import Footer from '../footer'
 
 const LoginRagister = () => {
   return (
@@ -84,7 +85,7 @@ const LoginRagister = () => {
                 {/* <!-- End Login Register Content --> */}
             </div>
     </div>
-    
+   
     </>
   )
 }

@@ -1,0 +1,49 @@
+
+{
+    "categories" :[
+        {
+            "id" : 1 ,
+            "text":"Men",
+            "link":"/shop-sidebar"
+            
+        },
+        {
+            "id" : 2 ,
+            "text":"Women",
+            "link":"/shop-sidebar"
+            
+        },
+        {
+            "id" : 3 ,
+            "text":"Accessories",
+            "link":"/shop-sidebar"
+            
+        },
+        {
+            "id" : 4 ,
+            "text":"Shoes",
+            "link":"/shop-sidebar"
+            
+        },
+        {
+            "id" : 5,
+            "text":"Dress",
+            "link":"/shop-sidebar"
+        
+        },
+        {
+            "id" : 6,
+            "text":"Denim",
+            "link":"/shop-sidebar"
+            
+        },
+        {
+            "id" : 7 ,
+            "text":"Men",
+            "link":"/shop-sidebar"
+            
+        }
+    ]
+}
+
+
