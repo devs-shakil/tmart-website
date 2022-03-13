@@ -2,6 +2,7 @@ import React from 'react';
 import { Header } from '../../Components/partial/Header';
 import ContactArea from './ContactArea';
 import BradCaump from './BradCaump';
+import Ofset from '../../Components/ofset';
 
 
 const Contact = () => {
@@ -15,7 +16,7 @@ const Contact = () => {
 
 
           {/* ofset wrapper start */}
-              {/* ekhane ofset hobe */}
+              <Ofset/>
           {/* ofset wrapper end  */}
 
         

@@ -83,7 +83,7 @@ const LoginRagister = () => {
                 </div>
                 {/* <!-- End Login Register Content --> */}
             </div>
-        </div>
+    </div>
     
     </>
   )
