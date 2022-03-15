@@ -16,19 +16,19 @@ const Menus = () => {
                          <Link to={menu.link}>{menu.text} </Link>
                             <ul className="dropdown">   
                                 {menu.dropdown.length > 0 && menu.dropdown.map(dropdownItem => (
-                                    <li key={dropdownItem.id} >
-                                        <Link className={dropdownItem.class} to={dropdownItem.link}>{dropdownItem.text}</Link>
-                                        <ul className="mega_item">
-                                          {/* {dropdownItem.mega_dropdown.length > 0 && dropdownItem.mega_dropdown.map(megaDropdown =>(
+                                    <li key={dropdownItem.id} className={dropdownItem.class} >
+                                        <Link to={dropdownItem.link}>{dropdownItem.text}</Link>
+                                        {/* <ul className="mega_item">
+                                          {dropdownItem.mega_dropdown.length > 0 && dropdownItem.mega_dropdown.map(megaDropdown =>(
                                               
                                               <li key={megaDropdown.id}>
                                                   <Link to={megaDropdown.link}>{megaDropdown.text}</Link>
                                               </li>
                                              
                                           ))} 
-                                          { console.log(megaDropdown.id)}*/}
+                                          { console.log(megaDropdown.id)}
                                         </ul>
-                                    
+                                     */}
                                     </li>
 
                                     ))}

@@ -38,7 +38,7 @@
             "id": 5,
             "text": "Shop",
             "class": "drop",
-            "link": "./shop",
+            "link": "/shop",
             "dropdown": [
                 {
                     "id": 6,

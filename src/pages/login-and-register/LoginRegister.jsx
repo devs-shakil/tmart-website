@@ -1,6 +1,6 @@
 import React from 'react'
 import regImg from '../../assets/images/bg/5.jpg'
-import Footer from '../footer'
+import SocialIcon from '../../temp/socialicon.json'
 
 const LoginRagister = () => {
   return (
@@ -10,7 +10,7 @@ const LoginRagister = () => {
      style={{background: `rgba(0, 0, 0, 0)`,
      backgroundImage:` url("${regImg}")`,
      backgroundRepeat: `no-repeat`,
-     backgroundPosition: 'center center',
+     backgroundPosition: `center center`,
      backgroundSize: `cover`}}>
             <div className="container">
                 <div className="row">
@@ -43,13 +43,14 @@ const LoginRagister = () => {
                                 <div className="htc__social__connect">
                                     <h2>Or Login With</h2>
                                     <ul className="htc__soaial__list">
-                                        <li><a className="bg--twitter" href="#"><i className="zmdi zmdi-twitter"></i></a></li>
+                                    {SocialIcon.socilaicon.length > 0 && SocialIcon.socilaicon.map(loginWithSocial =>(
+                                            <li key={loginWithSocial.id}>
+                                                <a className={loginWithSocial.class2} href="#">
+                                                    <i className={loginWithSocial.class1}></i>
+                                                </a>
+                                            </li>
+                                        ))}
 
-                                        <li><a className="bg--instagram" href="#"><i className="zmdi zmdi-instagram"></i></a></li>
-
-                                        <li><a className="bg--facebook" href="#"><i className="zmdi zmdi-facebook"></i></a></li>
-
-                                        <li><a className="bg--googleplus" href="#"><i className="zmdi zmdi-google-plus"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -71,10 +72,16 @@ const LoginRagister = () => {
                                 <div className="htc__social__connect">
                                     <h2>Or Login With</h2>
                                     <ul className="htc__soaial__list">
-                                        <li><a className="bg--twitter" href="#"><i className="zmdi zmdi-twitter"></i></a></li>
-                                        <li><a className="bg--instagram" href="#"><i className="zmdi zmdi-instagram"></i></a></li>
-                                        <li><a className="bg--facebook" href="#"><i className="zmdi zmdi-facebook"></i></a></li>
-                                        <li><a className="bg--googleplus" href="#"><i className="zmdi zmdi-google-plus"></i></a></li>
+
+                                        {SocialIcon.socilaicon.length > 0 && SocialIcon.socilaicon.map(loginWithSocial =>(
+                                            <li key={loginWithSocial.id}>
+                                                <a className={loginWithSocial.class2} href="#">
+                                                    <i className={loginWithSocial.class1}></i>
+                                                </a>
+                                            </li>
+                                        ))}
+
+                                       
                                     </ul>
                                 </div>
                             </div>

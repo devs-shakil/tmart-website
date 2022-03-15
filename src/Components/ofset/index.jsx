@@ -5,7 +5,7 @@ import ShoppingCart from './ShoppingCart'
 
 const Ofset = () => {
   return ( 
-    <div class="offset__wrapper">
+    <div className="offset__wrapper">
         <Search/>
         <OfsetMenu/>
         <ShoppingCart/>

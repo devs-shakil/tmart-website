@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../../Components/footer';
 import { Header } from '../../Components/partial/Header';
 import LoginRagister from './LoginRegister'
 
@@ -15,7 +16,7 @@ const LoginRegisterIndex = () => {
          {/* Login and register area start */}
           <LoginRagister/>
          {/* Login and register area end */}
-        
+          <Footer/>
       </div>    
     </>
   )

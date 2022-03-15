@@ -3,7 +3,7 @@ import Menus from '../Menus'
 import MenuExtra from '../Menus/MenuExtra'
 import logo from '../../assets/images/logo/logo.png'
 import { Link } from 'react-router-dom'
-import Footer from '../../pages/footer'
+import Footer from '../footer'
 
 export const Header = () => {
   return (
@@ -33,7 +33,7 @@ export const Header = () => {
             </div>
             {/* // <!-- End Mainmenu Area --> */}
         </header>
-        <Footer/>
+     
    
    </>
       

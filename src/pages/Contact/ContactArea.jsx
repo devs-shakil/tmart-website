@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Map from './Map'
 
 const ContactArea = () => {
   return (
@@ -78,7 +79,9 @@ const ContactArea = () => {
                     </div>
                     <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12 smt-30 xmt-30">
                         <div className="map-contacts">
-                            <div id="googleMap"></div>
+                            <div id="googleMap">
+                                <Map/>
+                            </div>
                         </div>
                     </div>
                 </div>

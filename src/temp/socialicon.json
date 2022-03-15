@@ -1,0 +1,29 @@
+{
+    "socilaicon":[
+        {
+            "name":"twitter",
+            "class1": "zmdi zmdi-twitter",
+            "class2": "bg--twitter",
+            "link":"www.twitter.com"
+        },
+        {
+            "name":"instragram",
+            "class1": "zmdi zmdi-instagram",
+            "class2": "bg--instagram",
+            "link":"www.instragram.com"
+        },
+        {
+            "name":"facebook",
+            "class1": "zmdi zmdi-facebook",
+            "class2": "bg--facebook",
+            "link":"www.facebook.com"
+        },
+        {
+            "name":"youtube",
+            "class1": "zmdi zmdi-youtube",
+            "class2": "bg--googleplus",
+            "link":"www.youtube.com"
+        }
+        
+    ]
+}

@@ -1,6 +1,8 @@
-import React from 'react'
-import Catagories from './catagories'
-import Information from './Information'
+import React from 'react';
+import Catagories from './catagories';
+import Information from './Information';
+import logo from '../../assets/images/logo/logo.png';
+import SocialIcon from '../../temp/socialicon.json'
 
 const Footer = () => {
   return (
@@ -14,7 +16,7 @@ const Footer = () => {
                             <div className="ft__widget">
                                 <div className="ft__logo">
                                     <a href="index.html">
-                                        <img src="images/logo/logo.png" alt="footer logo"/>
+                                        <img src={logo} alt="footer logo"/>
                                     </a>
                                 </div>
                                 <div className="footer-address">
@@ -32,7 +34,7 @@ const Footer = () => {
                                                 <i className="zmdi zmdi-email"></i>
                                             </div>
                                             <div className="address-text">
-                                                <a href="#"> info@example.com</a>
+                                                <a href="mailto:name@email.com"> info@example.com</a>
                                             </div>
                                         </li>
                                         <li>
@@ -40,16 +42,16 @@ const Footer = () => {
                                                 <i className="zmdi zmdi-phone-in-talk"></i>
                                             </div>
                                             <div className="address-text">
-                                                <p>+012 345 678 102 </p>
+                                                <a href="tel: 012 345 678 102">+012 345 678 102 </a>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
                                 <ul className="social__icon">
-                                    <li><a href="#"><i className="zmdi zmdi-twitter"></i></a></li>
-                                    <li><a href="#"><i className="zmdi zmdi-instagram"></i></a></li>
-                                    <li><a href="#"><i className="zmdi zmdi-facebook"></i></a></li>
-                                    <li><a href="#"><i className="zmdi zmdi-google-plus"></i></a></li>
+                                    {SocialIcon.socilaicon.length > 0 && SocialIcon.socilaicon.map(socialIconProps =>(
+                                         <li><a href={socialIconProps.link}><i className={socialIconProps.class1}></i></a></li>
+                                    ))}
+
                                 </ul>
                             </div>
                         </div>

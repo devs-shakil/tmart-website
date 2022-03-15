@@ -1,12 +1,17 @@
 import React from 'react'
+import Footer from '../../Components/footer'
 import { Header } from '../../Components/partial/Header'
+import BradCaump from '../Contact/BradCaump'
+import Gallery from './Gallery'
 
 
 const Portfolio = () => {
   return (
     <div>
         <Header/>
-        <h2>Hello Portfolio</h2>
+        <BradCaump/>
+        <Gallery/>
+        <Footer/>
     </div>
   )
 }
