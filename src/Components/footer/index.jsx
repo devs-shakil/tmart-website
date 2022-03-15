@@ -49,7 +49,11 @@ const Footer = () => {
                                 </div>
                                 <ul className="social__icon">
                                     {SocialIcon.socilaicon.length > 0 && SocialIcon.socilaicon.map(socialIconProps =>(
-                                         <li><a href={socialIconProps.link}><i className={socialIconProps.class1}></i></a></li>
+                                         <li key={socialIconProps.id}>
+                                             
+                                            <a href={socialIconProps.link}><i className={socialIconProps.class1}></i></a>
+                                            
+                                        </li>
                                     ))}
 
                                 </ul>

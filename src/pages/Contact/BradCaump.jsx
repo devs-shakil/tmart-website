@@ -22,8 +22,8 @@ const BradCaump = () => {
                           <div className="row">
                               <div className="col-xs-12">
                                   <div className="bradcaump__inner text-center">
-                                      {bradcaumpJson.bradcaump.length > 0 && bradcaumpJson.bradcaump.map(bradcumpProps =>(
-                                           <div>
+                                      {bradcaumpJson.bradcaump.length > 0 && bradcaumpJson.bradcaump.map(bradcumpProps =>( 
+                                           <div key={bradcumpProps.id}>
                                                     <h2 className="bradcaump-title"  >{bradcumpProps.id === 3 ?
                                                        bradcumpProps.text1 : ""}
                                                     </h2>

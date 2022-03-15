@@ -1,0 +1,60 @@
+{
+    "gallery":[
+        {
+            "id":1,
+            "link":"/shop",
+            "class1":"portfolio-icon",
+            "class2":"img-poppu",
+            "class3":"zmdi zmdi-instagram",
+            "title":"TITLE GOES HERE",
+            "categories":"photography"
+
+        },
+        {
+            "id":2,
+            "link":"/shop",
+            "class1":"portfolio-icon",
+            "class2":"video-popup",
+            "class3":"zmdi zmdi-videocam",
+            "title":"TITLE GOES HERE",
+            "categories":"webdesign"
+        },
+        {
+            "id":3,
+            "link":"/shop",
+            "class1":"portfolio-icon",
+            "class2":"video-popup",
+            "class3":"zmdi zmdi-videocam",
+            "title":"TITLE GOES HERE",
+            "categories":"photography"
+        },
+        {
+            "id":4,
+            "link":"/shop",
+            "class1":"portfolio-icon",
+            "class2":"img-poppu",
+            "class3":"zmdi zmdi-instagram",
+            "title":"TITLE GOES HERE",
+            "categories":"webdesign"
+        },
+        {
+            "id":5,
+            "link":"/shop",
+            "class1":"portfolio-icon",
+            "class2":"video-popup",
+            "class3":"zmdi zmdi-videocam",
+            "title":"TITLE GOES HERE",
+            "categories":"webdesign"
+        },
+        {
+            "id":6,
+            "link":"/shop",
+            "class1":"portfolio-icon",
+            "class2":"video-popup",
+            "class3":"zmdi zmdi-instagram",
+            "title":"TITLE GOES HERE",
+            "categories":"print"
+        }
+
+    ]
+}
