@@ -1,12 +1,13 @@
 import React from 'react'
 import Footer from '../../Components/footer'
 import { Header } from '../../Components/partial/Header'
+import BradCaump from '../../Components/partial/BradCaump'
 
 const shop = () => {
   return (
     <>
         <Header/>
-        <h3>hello shop page</h3>
+        <BradCaump/>
 
 
         <Footer/>        

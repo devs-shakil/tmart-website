@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../../Components/footer'
 import { Header } from '../../Components/partial/Header'
-import BradCaump from '../Contact/BradCaump'
+import BradCaump from '../../Components/partial/BradCaump'
 import Gallery from './Gallery'
 
 

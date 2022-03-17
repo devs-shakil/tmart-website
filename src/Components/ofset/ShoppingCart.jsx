@@ -1,12 +1,15 @@
 import React from 'react'
 
-const ShoppingCart = () => {
+const ShoppingCart = ({setToggleCartArea}) => {
+    const changeState = () =>{
+        setToggleCartArea(false)
+    }
   return (
-    <div>
-          <div className="shopping__cart">
-                <div className="shopping__cart__inner">
+    <>
+          <div className="shopping__cart shopping__cart__on">
+                <div className="shopping__cart__inner ">
                     <div className="offsetmenu__close__btn">
-                        <a href="#"><i className="zmdi zmdi-close"></i></a>
+                        <a href="#" onClick={changeState}><i className="zmdi zmdi-close"></i></a>
                     </div>
                     <div className="shp__cart__wrap">
                         <div className="shp__single__product">
@@ -36,7 +39,7 @@ const ShoppingCart = () => {
                                 <span className="shp__price">$25.00</span>
                             </div>
                             <div className="remove__btn">
-                                <a href="#" title="Remove this item"><i className="zmdi zmdi-close"></i></a>
+                                <a href="#" title="Remove this item" ><i className="zmdi zmdi-close"></i></a>
                             </div>
                         </div>
                     </div>
@@ -50,7 +53,7 @@ const ShoppingCart = () => {
                     </ul>
                 </div>
             </div>
-    </div>
+    </>
   )
 }
 
