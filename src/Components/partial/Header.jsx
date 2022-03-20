@@ -47,6 +47,11 @@ export const Header = () => {
                 </div>
             </div>
             {/* // <!-- End Mainmenu Area --> */}
+
+             {/* // <!-- End Mainmenu Area --> */}
+              {/* // <!-- End Mainmenu Area --> */}
+               {/* // <!-- End Mainmenu Area --> */}
+                {/* // <!-- End Mainmenu Area --> */}
         </header>
 
         <div className="body__overlay  "></div>
