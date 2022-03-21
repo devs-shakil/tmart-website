@@ -3,8 +3,6 @@ import Menus from '../Menus'
 import MenuExtra from '../Menus/MenuExtra'
 import logo from '../../assets/images/logo/logo.png'
 import { Link } from 'react-router-dom'
-import Footer from '../footer';
-import Ofset from '../ofset'
 import Search from '../ofset/Search'
 import ShoppingCart from '../ofset/ShoppingCart'
 
@@ -48,10 +46,7 @@ export const Header = () => {
             </div>
             {/* // <!-- End Mainmenu Area --> */}
 
-             {/* // <!-- End Mainmenu Area --> */}
-              {/* // <!-- End Mainmenu Area --> */}
-               {/* // <!-- End Mainmenu Area --> */}
-                {/* // <!-- End Mainmenu Area --> */}
+             
         </header>
 
         <div className="body__overlay  "></div>
