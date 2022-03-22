@@ -1,9 +1,10 @@
 import React from 'react'
+import SocialIcon from '../../temp/socialicon.json'
 
-const Registion = () => {
+const Registion = ({isSelectedRegister}) => {
   return (
     <>
-        <div id="register" role="tabpanel" className="single__tabs__panel tab-pane fade">
+        <div className={`single__tabs__panel tab-pane fade ${isSelectedRegister ? "in active" : ""}`}>
            <form className="login" method="post">
                 <input type="text" placeholder="Name*"/>
                 <input type="email" placeholder="Email*"/>

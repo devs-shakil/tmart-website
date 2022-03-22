@@ -1,22 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import SocialIcon from '../../temp/socialicon.json'
 
-const Login = () => {
+const Login = ({isSelectedLogin}) => {
+    const [userName, setUserName] = useState();
+    const [password, setPassword] = useState();
+    const handleSubmit = (e) =>{
+        console.log("submitted")
+        e.preventDefault();
+        try{
+
+        }catch(error){
+            console.warn("login error", error)
+        }
+        setUserName("");
+        setPassword("");
+
+    }
+
+
   return (
     <>
-         <div id="login" role="tabpanel" className="single__tabs__panel tab-pane fade in active">
-                <form className="login" method="post">
-                    <input type="text" placeholder="User Name*"/>
-                    <input type="password" placeholder="Password*"/>
+         <div className={`single__tabs__panel tab-pane fade ${isSelectedLogin ? "in active" : ""}`}>
+                <form className="login" onSubmit={handleSubmit}>
+                    <input type="text" placeholder="User Name*" onChange={(e) => setUserName(e.target.value)}/>
+                    <input type="password" placeholder="Password*" onChange={(e) => setPassword(e.target.value)}/>
+              
+                    <div className="tabs__checkbox">
+                        <input type="checkbox"/>
+                        <span> Remember me</span>
+                        <span className="forget"><Link to="#">Forget Pasword?</Link></span>
+                    </div>
+                    <div className="htc__login__btn mt--30">
+                        <button type="submit" href="#">Login</button>
+                    </div>
                 </form>
-                <div className="tabs__checkbox">
-                    <input type="checkbox"/>
-                    <span> Remember me</span>
-                    <span className="forget"><a href="#">Forget Pasword?</a></span>
-                </div>
-                <div className="htc__login__btn mt--30">
-                    <a href="#">Login</a>
-                </div>
                 <div className="htc__social__connect">
                     <h2>Or Login With</h2>
                     <ul className="htc__soaial__list">
