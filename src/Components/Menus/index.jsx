@@ -18,17 +18,17 @@ const Menus = () => {
                                 {menu.dropdown.length > 0 && menu.dropdown.map(dropdownItem => (
                                     <li key={dropdownItem.id} className={dropdownItem.class} >
                                         <Link to={dropdownItem.link}>{dropdownItem.text}</Link>
-                                        {/* <ul className="mega_item">
-                                          {dropdownItem.mega_dropdown.length > 0 && dropdownItem.mega_dropdown.map(megaDropdown =>(
-                                              
-                                              <li key={megaDropdown.id}>
-                                                  <Link to={megaDropdown.link}>{megaDropdown.text}</Link>
-                                              </li>
-                                             
-                                          ))} 
-                                          { console.log(megaDropdown.id)}
-                                        </ul>
-                                     */}
+                                        <ul className="level-dropdown">
+                                            {dropdownItem.mega_dropdown.length > 0 && dropdownItem.mega_dropdown.map(megaDropdown =>(
+                                                
+                                                <li key={megaDropdown.id}>
+                                                    <Link to={megaDropdown.link}>{megaDropdown.text}</Link>
+                                                </li>
+                                                
+                                            ))} 
+                                         
+                                        </ul> 
+                                     
                                     </li>
 
                                     ))}

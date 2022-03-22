@@ -11,7 +11,7 @@ const Contact = () => {
     <>
     
              <Header/>
-            <BradCaump/>
+            <BradCaump />
             <ContactArea/>
             <Footer/>
             

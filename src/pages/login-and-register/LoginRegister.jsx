@@ -1,6 +1,7 @@
 import React from 'react'
 import regImg from '../../assets/images/bg/5.jpg'
-import SocialIcon from '../../temp/socialicon.json'
+import Login from './Login'
+import Registion from './Registion'
 
 const LoginRagister = () => {
   return (
@@ -25,67 +26,11 @@ const LoginRagister = () => {
                 <div className="row">
                     <div className="col-md-6 col-md-offset-3">
                         <div className="htc__login__register__wrap">
-                            {/* <!-- Start Single Content --> */}
-                            <div id="login" role="tabpanel" className="single__tabs__panel tab-pane fade in active">
-                                <form className="login" method="post">
-                                    
-                                    <input type="text" placeholder="User Name*"/>
-                                    <input type="password" placeholder="Password*"/>
-                                </form>
-                                <div className="tabs__checkbox">
-                                    <input type="checkbox"/>
-                                    <span> Remember me</span>
-                                    <span className="forget"><a href="#">Forget Pasword?</a></span>
-                                </div>
-                                <div className="htc__login__btn mt--30">
-                                    <a href="#">Login</a>
-                                </div>
-                                <div className="htc__social__connect">
-                                    <h2>Or Login With</h2>
-                                    <ul className="htc__soaial__list">
-                                    {SocialIcon.socilaicon.length > 0 && SocialIcon.socilaicon.map(loginWithSocial =>(
-                                            <li key={loginWithSocial.id}>
-                                                <a className={loginWithSocial.class2} href="#">
-                                                    <i className={loginWithSocial.class1}></i>
-                                                </a>
-                                            </li>
-                                        ))}
-
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* <!-- End Single Content --> */}
-                            {/* <!-- Start Single Content --> */}
-                            <div id="register" role="tabpanel" className="single__tabs__panel tab-pane fade">
-                                <form className="login" method="post">
-                                    <input type="text" placeholder="Name*"/>
-                                    <input type="email" placeholder="Email*"/>
-                                    <input type="password" placeholder="Password*"/>
-                                </form>
-                                <div className="tabs__checkbox">
-                                    <input type="checkbox"/>
-                                    <span> Remember me</span>
-                                </div>
-                                <div className="htc__login__btn">
-                                    <a href="#">register</a>
-                                </div>
-                                <div className="htc__social__connect">
-                                    <h2>Or Login With</h2>
-                                    <ul className="htc__soaial__list">
-
-                                        {SocialIcon.socilaicon.length > 0 && SocialIcon.socilaicon.map(loginWithSocial =>(
-                                            <li key={loginWithSocial.id}>
-                                                <a className={loginWithSocial.class2} href="#">
-                                                    <i className={loginWithSocial.class1}></i>
-                                                </a>
-                                            </li>
-                                        ))}
-
-                                       
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* <!-- End Single Content --> */}
+                           
+                            <Login/>
+                          
+                            <Registion/>
+                           
                         </div>
                     </div>
                 </div>
