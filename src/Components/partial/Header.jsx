@@ -5,20 +5,20 @@ import logo from '../../assets/images/logo/logo.png'
 import { Link } from 'react-router-dom'
 import Search from '../ofset/Search'
 import ShoppingCart from '../ofset/ShoppingCart'
+import OfsetMenu from '../ofset/OfsetMenu'
+import MobileMenu from '../Menus/MobileMenu'
 
 export const Header = () => {
     const [toggleSearchArea, setToggleSearchArea] = useState(false);
     const [toggleCartArea, setToggleCartArea] = useState(false)
-    console.log(toggleCartArea)
+    const [toggleOfsetMenuArea, setToggleOfsetMenuArea] = useState(false)
     useEffect(() => {
         document.querySelector('body').classList.add('search__box__show__hide');
     },[]);
     
-    useEffect(() =>{
-        document.querySelector('body').classList.add('shopping__cart__on');
-       
-    },[]);
+   
 
+    
   return (
    <>
      <header id="header" className="htc-header header--3 bg__white">
@@ -35,10 +35,13 @@ export const Header = () => {
                         </div>
 
                         {/* <!-- Start Main menu Areas --> */}
-                        <Menus />
+                        <div className="col-md-8 col-lg-8 col-sm-6 col-xs-6">
+                             <Menus />   
+                             <MobileMenu/>
+                        </div>
                         {/* <!-- End Main menu Areas --> */}
                         
-                        <MenuExtra setToggleSearchArea={setToggleSearchArea} setToggleCartArea={setToggleCartArea} />
+                        <MenuExtra setToggleSearchArea={setToggleSearchArea} setToggleCartArea={setToggleCartArea} setToggleOfsetMenuArea={setToggleOfsetMenuArea}/>
                     </div>
 
                     <div className="mobile-menu-area"></div>
@@ -49,16 +52,19 @@ export const Header = () => {
              
         </header>
 
-        <div className="body__overlay  "></div>
+        <div className={`body__overlay ${toggleSearchArea || toggleCartArea || toggleOfsetMenuArea ? (' is-visible') : ""} `}/>
 
         {toggleSearchArea && (
             <Search setToggleSearchArea={setToggleSearchArea}/>
 
         )}
         {toggleCartArea && (
-            <ShoppingCart setToggleCartArea={setToggleCartArea} />
+            <ShoppingCart setToggleCartArea={setToggleCartArea} toggleCartArea={toggleCartArea}  />
         )}
+        {toggleOfsetMenuArea && (
+            <OfsetMenu toggleOfsetMenuArea={toggleOfsetMenuArea} setToggleOfsetMenuArea={setToggleOfsetMenuArea}/>
 
+        )}
    
    </>
       

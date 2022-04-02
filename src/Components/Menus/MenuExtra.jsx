@@ -1,13 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const MenuExtra = ({setToggleSearchArea , setToggleCartArea}) => {
+const MenuExtra = ({setToggleSearchArea , setToggleCartArea, setToggleOfsetMenuArea}) => {
  
  const toggleSearch = () =>{
   setToggleSearchArea(true)
  }
  const toggleCart = () =>{
   setToggleCartArea(true)
+ }
+ const togoOfsetMenu = () =>{
+  setToggleOfsetMenuArea(true)
  }
 
   return (
@@ -25,7 +28,7 @@ const MenuExtra = ({setToggleSearchArea , setToggleCartArea}) => {
                 <span className="ti-shopping-cart" onClick={toggleCart}/>
             </li>
             <li className="toggle__menu hidden-xs hidden-sm">
-              <span className="ti-menu"/>
+              <span className="ti-menu" onClick={togoOfsetMenu}/>
             </li>
         </ul>
     </div>

@@ -7,7 +7,7 @@ const Menus = () => {
     
   return (
 <>
-    <div className="col-md-8 col-lg-8 col-sm-6 col-xs-6">
+   
         <nav className="mainmenu__nav hidden-xs hidden-sm">
              <ul className="main__menu">
 
@@ -41,7 +41,7 @@ const Menus = () => {
             </ul>
         </nav>
 
-    </div>
+    
                       
  
 </>

@@ -1,0 +1,35 @@
+{
+    "categoriesjson":[
+        {
+            "id": 1,
+            "text":"Men’s Clothing",
+            "link":"#"
+
+        },
+        {
+            "id": 2,
+            "text":"Computer & Office",
+            "link":"#"
+
+        },
+        {
+            "id": 3,
+            "text":"Jewelry & Watches",
+            "link":"#"
+
+        },
+        {
+            "id": 4,
+            "text":"Bags & Shoes",
+            "link":"#"
+
+        },
+        {
+            "id": 5,
+            "text":" Phones & Accessories",
+            "link":"#"
+
+        }
+
+    ]
+}

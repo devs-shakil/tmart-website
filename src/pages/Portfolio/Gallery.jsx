@@ -1,28 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import img1 from "../../assets/images/portfolio/equal/1.jpg";
 import GalleryJson from '../../temp/Gallery.json'
 
 const Gallery = () => {
-    const [items, setItems] = useState(GalleryJson);
-    const filterItem = (cateItem) =>{
-        const updateItem = GalleryJson.filter(curElem =>{
-            return curElem.categories === cateItem ;
-        });
-        setItems(updateItem);
-        console.log(cateItem.className)
-    }
-
-
+   
     
   return (
     
     <div className="portfolio-grid-area bg__white pt--130 pb--100">
     <div className="container">
         <div className="portfolio-menu-active gutter-btn mb--50 text-center">
-            <button className="active" data-filter="*" onClick={ () => filterItem(items)}>All works</button>
-            <button  onClick={ () => filterItem('webdesign')}>Webdesign</button>
-            <button  onClick={ () => filterItem('photography')}>Photography</button>
-            <button  onClick={ () => filterItem('print')}>print</button>
+            <button className="active" data-filter="*">All works</button>
+            <button  >Webdesign</button>
+            <button >Photography</button>
+            <button >print</button>
 
         </div>
         <div className="portfolio-style">

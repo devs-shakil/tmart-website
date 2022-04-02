@@ -1,30 +1,38 @@
-import React from 'react'
+import React from 'react';
+import SocialIcon from '../../temp/socialicon.json';
+import sidebarThumb from '../../temp/sidebarthumb.json';
+import logo from '../../assets/images/logo/logo.png'
 
-const OfsetMenu = () => {
+const OfsetMenu = ({toggleOfsetMenuArea , setToggleOfsetMenuArea}) => {
+
+    const closeToggleOfsetMenu = () =>{
+        setToggleOfsetMenuArea(false)
+    }
+    
   return (
     <>
-         <div className="offsetmenu">
+         <div className={`offsetmenu ${toggleOfsetMenuArea ? "offsetmenu__on" : ""}`}>
                 <div className="offsetmenu__inner">
                     <div className="offsetmenu__close__btn">
-                        <a href="#"><i className="zmdi zmdi-close"></i></a>
+                        <a href="#" onClick={closeToggleOfsetMenu}><i className="zmdi zmdi-close"></i></a>
                     </div>
                     <div className="off__contact">
                         <div className="logo">
                             <a href="index.html">
-                                <img src="images/logo/logo.png" alt="logo"/>
+                                <img src={logo} alt="logo"/>
                             </a>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetu adipisicing elit sed do eiusmod tempor incididunt ut labore.</p>
                     </div>
                     <ul className="sidebar__thumd">
-                        <li><a href="#"><img src="images/sidebar-img/2.jpg" alt="sidebar images"/></a></li>
-                        <li><a href="#"><img src="images/sidebar-img/3.jpg" alt="sidebar images"/></a></li>
-                        <li><a href="#"><img src="images/sidebar-img/4.jpg" alt="sidebar images"/></a></li>
-                        <li><a href="#"><img src="images/sidebar-img/5.jpg" alt="sidebar images"/></a></li>
-                        <li><a href="#"><img src="images/sidebar-img/6.jpg" alt="sidebar images"/></a></li>
-                        <li><a href="#"><img src="images/sidebar-img/7.jpg" alt="sidebar images"/></a></li>
-                        <li><a href="#"><img src="images/sidebar-img/8.jpg" alt="sidebar images"/></a></li>
-                        <li><a href="#"><img src="images/sidebar-img/1.jpg" alt="sidebar images"/></a></li>
+                        {sidebarThumb.sideBarThum.length > 0 && sidebarThumb.sideBarThum.map(sidebarProps =>(
+                               <li key={sidebarProps.id}>
+                               <a href={sidebarProps.link}>
+                                   <img src={sidebarProps.src} alt="" />
+                               </a>
+                           </li>
+                            
+                       ))}
                     </ul>
                     <div className="offset__widget">
                         <div className="offset__single">
@@ -47,15 +55,15 @@ const OfsetMenu = () => {
                     <div className="offset__sosial__share">
                         <h4 className="offset__title">Follow Us On Social</h4>
                         <ul className="off__soaial__link">
-                            <li><a className="bg--twitter" href="#"  title="Twitter"><i className="zmdi zmdi-twitter"></i></a></li>
-                            
-                            <li><a className="bg--instagram" href="#" title="Instagram"><i className="zmdi zmdi-instagram"></i></a></li>
 
-                            <li><a className="bg--facebook" href="#" title="Facebook"><i className="zmdi zmdi-facebook"></i></a></li>
+                        {SocialIcon.socilaicon.length > 0 && SocialIcon.socilaicon.map(loginWithSocial =>(
+                                 <li key={loginWithSocial.id}>
+                                    <a className={loginWithSocial.class2} href="#">
+                                        <i className={loginWithSocial.class1}></i>
+                                     </a>
+                                </li>
+                         ))}
 
-                            <li><a className="bg--googleplus" href="#" title="Google Plus"><i className="zmdi zmdi-google-plus"></i></a></li>
-
-                            <li><a className="bg--google" href="#" title="Google"><i className="zmdi zmdi-google"></i></a></li>
                         </ul>
                     </div>
                 </div>

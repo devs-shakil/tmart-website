@@ -5,11 +5,21 @@ import SocialIcon from '../../temp/socialicon.json'
 const Login = ({isSelectedLogin}) => {
     const [userName, setUserName] = useState();
     const [password, setPassword] = useState();
+
+    const handleUserName = (e) =>{
+        setUserName(e.target.value)
+      
+    };
+    const handlePassword = (e) =>{
+        setPassword(e.target.value)
+     
+    }
+
     const handleSubmit = (e) =>{
-        console.log("submitted")
+     
         e.preventDefault();
         try{
-
+           
         }catch(error){
             console.warn("login error", error)
         }
@@ -23,8 +33,8 @@ const Login = ({isSelectedLogin}) => {
     <>
          <div className={`single__tabs__panel tab-pane fade ${isSelectedLogin ? "in active" : ""}`}>
                 <form className="login" onSubmit={handleSubmit}>
-                    <input type="text" placeholder="User Name*" onChange={(e) => setUserName(e.target.value)}/>
-                    <input type="password" placeholder="Password*" onChange={(e) => setPassword(e.target.value)}/>
+                    <input type="text" placeholder="User Name*" onChange={handleUserName}/>
+                    <input type="password" placeholder="Password*" onChange={handlePassword}/>
               
                     <div className="tabs__checkbox">
                         <input type="checkbox"/>

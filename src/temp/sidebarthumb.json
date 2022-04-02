@@ -1,0 +1,52 @@
+{
+    "sideBarThum":[
+        {
+            "id":1,
+            "link":"#",
+            "src":"../assets/images/sidebar-img/1.jpg"
+
+        },
+        {
+            "id":2,
+            "link":"#",
+            "src":"../assets/images/sidebar-img/2.jpg"
+
+        },
+        {
+            "id":3,
+            "link":"#",
+            "src":"../assets/images/sidebar-img/3.jpg"
+
+        },
+        {
+            "id":4,
+            "link":"#",
+            "src":"../assets/images/sidebar-img/4.jpg"
+
+        },
+        {
+            "id":5,
+            "link":"#",
+            "src":"../assets/images/sidebar-img/5.jpg"
+
+        },
+        {
+            "id":6,
+            "link":"#",
+            "src":"../assets/images/sidebar-img/6.jpg"
+
+        },
+        {
+            "id":7,
+            "link":"#",
+            "src":"../assets/images/sidebar-img/7.jpg"
+
+        },
+        {
+            "id":8,
+            "link":"#",
+            "src":"../assets/images/sidebar-img/8.jpg"
+
+        }
+    ]
+}

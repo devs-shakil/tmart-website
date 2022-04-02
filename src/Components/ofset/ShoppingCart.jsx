@@ -1,12 +1,12 @@
 import React from 'react'
 
-const ShoppingCart = ({setToggleCartArea}) => {
+const ShoppingCart = ({setToggleCartArea , toggleCartArea}) => {
     const changeState = () =>{
         setToggleCartArea(false)
     }
   return (
     <>
-          <div className="shopping__cart shopping__cart__on">
+          <div className={`shopping__cart ${toggleCartArea ? 'shopping__cart__on' : ""}`}>
                 <div className="shopping__cart__inner ">
                     <div className="offsetmenu__close__btn">
                         <a href="#" onClick={changeState}><i className="zmdi zmdi-close"></i></a>

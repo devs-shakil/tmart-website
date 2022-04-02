@@ -80,7 +80,7 @@ const ContactArea = () => {
                     <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12 smt-30 xmt-30">
                         <div className="map-contacts">
                             <div id="googleMap">
-                                <Map/>
+                                {/* <Map/> */}
                             </div>
                         </div>
                     </div>
